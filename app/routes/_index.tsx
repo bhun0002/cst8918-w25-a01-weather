@@ -66,7 +66,7 @@ export default function CurrentConditions() {
         >
           <img src={getWeatherIconUrl(weather.icon)} alt="" />
           <div style={{fontSize: '2rem'}}>
-            {currentConditions.temp.toFixed(1)}°C
+            {currentConditions.main.temp.toFixed(1)}°C
           </div>
         </div>
         <p
