@@ -21,6 +21,7 @@ const location = {
   lon: -75.7391,
   countryCode: 'CA'
 }
+
 const units = 'metric'
 
 export async function loader() {
@@ -32,7 +33,7 @@ export async function loader() {
     lon: location.lon,
     units: units
   })
-  return json({currentConditions: data.current})
+  return json({currentConditions: data})
 }
 
 export default function CurrentConditions() {

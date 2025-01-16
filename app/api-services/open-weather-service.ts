@@ -22,7 +22,7 @@ export async function fetchWeatherData({
   lon,
   units
 }: FetchWeatherDataParams) {
-  const baseURL = 'https://api.openweathermap.org/data/3.0/onecall'
+  const baseURL = 'https://api.openweathermap.org/data/2.5/weather'
   const queryString = `lat=${lat}&lon=${lon}&units=${units}&appid=${API_KEY}`
 
   const cacheEntry = getCacheEntry(queryString)
